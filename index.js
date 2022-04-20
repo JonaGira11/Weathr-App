@@ -19,7 +19,7 @@ form.reset();
 
 const FetchData= async (SearchedCity) => {
     try{
-         const weatherData = await axios.get(` http://api.openweathermap.org/data/2.5/weather?q=${SearchedCity}&appid=d5ab0ef322c90afd21ca09186e190f96&units=metric`)
+         const weatherData = await axios.get(` https://api.openweathermap.org/data/2.5/weather?q=${SearchedCity}&appid=d5ab0ef322c90afd21ca09186e190f96&units=metric`)
     // console.log(weatherData)
     addData(weatherData.data)
      
